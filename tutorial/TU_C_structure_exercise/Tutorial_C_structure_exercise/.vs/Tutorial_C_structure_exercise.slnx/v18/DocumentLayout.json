@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\EC\\tutorial\\TU_C_structure_exercise\\Tutorial_C_structure_exercise\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11D66389-C1D7-4431-B4F7-241D85B52F6E}|Tutorial_C_structure_exercise.vcxproj|C:\\Users\\ADMIN\\source\\repos\\EC\\tutorial\\TU_C_structure_exercise\\Tutorial_C_structure_exercise\\C_structure_exercise.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{11D66389-C1D7-4431-B4F7-241D85B52F6E}|Tutorial_C_structure_exercise.vcxproj|solutionrelative:C_structure_exercise.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11D66389-C1D7-4431-B4F7-241D85B52F6E}|Tutorial_C_structure_exercise.vcxproj|C:\\Users\\ADMIN\\source\\repos\\EC\\tutorial\\TU_C_structure_exercise\\Tutorial_C_structure_exercise\\C_structure_exercise3.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{11D66389-C1D7-4431-B4F7-241D85B52F6E}|Tutorial_C_structure_exercise.vcxproj|solutionrelative:C_structure_exercise3.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11D66389-C1D7-4431-B4F7-241D85B52F6E}|Tutorial_C_structure_exercise.vcxproj|C:\\Users\\ADMIN\\source\\repos\\EC\\tutorial\\TU_C_structure_exercise\\Tutorial_C_structure_exercise\\C_structure_exercise2.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{11D66389-C1D7-4431-B4F7-241D85B52F6E}|Tutorial_C_structure_exercise.vcxproj|solutionrelative:C_structure_exercise2.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "C_structure_exercise3.c",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\EC\\tutorial\\TU_C_structure_exercise\\Tutorial_C_structure_exercise\\C_structure_exercise3.c",
+              "RelativeDocumentMoniker": "C_structure_exercise3.c",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\EC\\tutorial\\TU_C_structure_exercise\\Tutorial_C_structure_exercise\\C_structure_exercise3.c",
+              "RelativeToolTip": "C_structure_exercise3.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-04T08:25:17.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "C_structure_exercise2.c",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\EC\\tutorial\\TU_C_structure_exercise\\Tutorial_C_structure_exercise\\C_structure_exercise2.c",
+              "RelativeDocumentMoniker": "C_structure_exercise2.c",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\EC\\tutorial\\TU_C_structure_exercise\\Tutorial_C_structure_exercise\\C_structure_exercise2.c",
+              "RelativeToolTip": "C_structure_exercise2.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-04T08:21:52.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "C_structure_exercise.c",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\EC\\tutorial\\TU_C_structure_exercise\\Tutorial_C_structure_exercise\\C_structure_exercise.c",
+              "RelativeDocumentMoniker": "C_structure_exercise.c",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\EC\\tutorial\\TU_C_structure_exercise\\Tutorial_C_structure_exercise\\C_structure_exercise.c",
+              "RelativeToolTip": "C_structure_exercise.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-04T07:24:00.031Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
