@@ -40,59 +40,77 @@ MCU:  STM32F411RE (Nucleo-64)
 
 
 ```c++
+/*----------------------------------------------------------------\
+@ Embedded Controller by Young-Keun Kim - Handong Global University
+Author           : Yeonhu Kim
+Created          : 05-03-2021
+Modified         : 17-09-2026
+Language/ver     : C++ in VS Code
+
+Description      : GPIO Library. Distributed to Students for LAB_GPIO
+/----------------------------------------------------------------*/
+
+#ifndef __ECGPIO2_H
+#define __ECGPIO2_H
+
 #include "stm32f411xe.h"
-#include "ecRCC.h"
+#include "ecRCC2.h"
+#include "ecPinNames.h"
 
-#ifndef __ECGPIO_H
-#define __ECGPIO_H
+#define INPUT  0x00
+#define OUTPUT 0x01
+#define AF     0x02
+#define ANALOG 0x03
 
-// MODER
-#define INPUT  		0x00
-#define OUTPUT 		0x01
-#define AF     		0x02
-#define ANALOG 		0x03
+#define HIGH 1
+#define LOW  0
 
-// IDR & ODR
-#define HIGH 		1
-#define LOW  		0
+#define LED_PIN 	PB_12
+#define BUTTON_PIN  PA_0
 
-// OSPEED
-#define LOW_SPEED		0x00
-#define MID_SPEED		0x01
-#define FAST_SPEED		0x02
-#define HIGH_SPEED		0x03
+/*---------------------------------------------------------------- 
+                    [EXERCISE]
+---------------------------------------------------------------- */
+// ADD MORE  MACRO related to GPIO 
+// PU, PD, NO_PUPD, PUSH_PULL, LOW, MEDIUM, etc
 
-// OTYPER
-#define PUSH_PULL 		0	// Push-pull
-#define OPEN_DRAIN 		1 	// Open-Drain
 
-// PUDR
-#define NO_PUPD			0x00 	// No pull-up, pull-down
-#define PULL_UP			0x01 	// Pull-up
-#define PULL_DOWN 		0x02 	// Pull-down	
-#define RESERVED 		0x03 	// Reserved
-
-// PIN
-#define LED_PIN 		5
-#define BUTTON_PIN 		13
 
 #ifdef __cplusplus
  extern "C" {
 #endif /* __cplusplus */
 	 
-void GPIO_init(GPIO_TypeDef *Port, int pin, int mode);
-void GPIO_mode(GPIO_TypeDef* Port, int pin, int mode);
-void GPIO_write(GPIO_TypeDef *Port, int pin, int output);
-int  GPIO_read(GPIO_TypeDef *Port, int pin);
-void GPIO_ospeed(GPIO_TypeDef* Port, int pin, int speed);
-void GPIO_otype(GPIO_TypeDef* Port, int pin, int type);
-void GPIO_pupd(GPIO_TypeDef* Port, int pin, int pupd);
+void GPIO_init(PinName_t pinName, uint32_t mode);     
+void GPIO_mode(PinName_t pinName, uint32_t mode);
+void GPIO_ospeed(PinName_t pinName, uint32_t speed);
+void GPIO_otype(PinName_t pinName, uint32_t type);
+void GPIO_pupd(PinName_t pinName, uint32_t pupd);
+void GPIO_write(PinName_t pinName, uint32_t Output);
+uint32_t  GPIO_read(PinName_t pinName);
 
+// ARDUINO Syntax  (Optional)
+void pinMode(PinName_t pin, uint32_t mode);
+void digitalWrite(PinName_t pin, uint32_t value);
+uint32_t  digitalRead(PinName_t pin);
+
+////////////////////////////////////////////////////////////////////
+/* Include the following in GPIO.h */
+////////////////////////////////////////////////////////////////////
+
+// FND for JKIT board 
+extern int numberFND[12][8];
+void FND_init(PinName_t *pinFND);
+void FND_select_init(PinName_t *selectFND);
+void FND_display(uint8_t num);
+void FND_select(uint8_t digit);
+
+ 
 #ifdef __cplusplus
 }
 #endif /* __cplusplus */
 
-#endif
+#endif // __ECGPIO2_H
+
 ```
 
 
