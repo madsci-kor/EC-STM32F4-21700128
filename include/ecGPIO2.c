@@ -2,7 +2,7 @@
 @ Embedded Controller by Young-Keun Kim - Handong Global University
 Author           : Yeonhu Kim
 Created          : 05-03-2021
-Modified         : 14-09-2026
+Modified         : 22-09-2026
 Language/ver     : C++ in VS Code
 
 Description      : GPIO Library. Distributed to Students for LAB_GPIO
@@ -10,7 +10,6 @@ Description      : GPIO Library. Distributed to Students for LAB_GPIO
 
 
 #include "ecGPIO2.h"
-
 
 /*---------------------------------------------------------------- 
 				[EXERCISE]
@@ -76,6 +75,12 @@ void GPIO_otype(PinName_t pinName, uint32_t type){
 }
 
 // GPIO Push-Pull    : No pull-up, pull-down (00), Pull-up (01), Pull-down (10), Reserved (11)
+const int NO_PUPD = 00;
+const int PULL_UP = 01;
+const int PULL_DOWN = 10;
+const int RESERVED = 11;
+
+
 void GPIO_pupd(PinName_t pinName, uint32_t pupd){
 	GPIO_TypeDef * Port;
 	unsigned int pin;
@@ -101,6 +106,16 @@ uint32_t GPIO_read(PinName_t pinName){
 	ecPinmap(pinName,&Port,&pin);
 
 	int read_result = (Port->IDR>>pin)&1;
+
+	return read_result; //[TO-DO] YOUR CODE GOES HERE	
+}
+
+uint32_t GPIO_read_ODR(PinName_t pinName){
+	GPIO_TypeDef * Port;
+	unsigned int pin;
+	ecPinmap(pinName,&Port,&pin);
+
+	int read_result = (Port->ODR>>pin)&1;
 
 	return read_result; //[TO-DO] YOUR CODE GOES HERE	
 }
@@ -144,7 +159,7 @@ int numberFND[12][8]={
                     {1,1,1,1,0,0,1,0},          //three
                     {0,1,1,0,0,1,1,0},          //four
                     {1,0,1,1,0,1,1,0},          //five
-                    {1,1,0,1,1,1,1,0},          //six
+                    {1,0,1,1,1,1,1,0},          //six
                     {1,1,1,0,0,1,0,0},          //seven
                     {1,1,1,1,1,1,1,0},          //eight
                     {1,1,1,1,0,1,1,0},          //nine
@@ -175,7 +190,7 @@ void FND_display(uint8_t num){
     // [YOUR CODE GOES HERE]  
 	for (int i=0; i<8; i++){
 		GPIO_write(_fndPins[i], numberFND[num][i]);
-	}
+	} 
 }
 
 // Select display: FND0 to FND3

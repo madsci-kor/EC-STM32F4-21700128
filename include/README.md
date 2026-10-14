@@ -36,7 +36,7 @@ MCU:  STM32F411RE (Nucleo-64)
 
 ### Header File
 
- `#include "ecGPIO.h"`
+ `#include "ecGPIO2.h"`
 
 
 ```c++

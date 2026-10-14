@@ -2,7 +2,7 @@
 @ Embedded Controller by Young-Keun Kim - Handong Global University
 Author           : Yeonhu Kim
 Created          : 05-03-2021
-Modified         : 17-09-2026
+Modified         : 22-09-2026
 Language/ver     : C++ in VS Code
 
 Description      : GPIO Library. Distributed to Students for LAB_GPIO
@@ -45,6 +45,7 @@ void GPIO_otype(PinName_t pinName, uint32_t type);
 void GPIO_pupd(PinName_t pinName, uint32_t pupd);
 void GPIO_write(PinName_t pinName, uint32_t Output);
 uint32_t  GPIO_read(PinName_t pinName);
+uint32_t GPIO_read_ODR(PinName_t pinName);
 
 // ARDUINO Syntax  (Optional)
 void pinMode(PinName_t pin, uint32_t mode);
